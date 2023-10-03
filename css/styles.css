@@ -1,0 +1,35 @@
+:root {
+  --bg-cyan-blue-color: #2c3e50;
+  --white-color: #fff;
+}
+
+* {
+  /*inclui a borda e o padding no tamanho total do elemento*/
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-container {
+  background-color: var(--bg-cyan-blue-color);
+  height: 100px;
+  /*sempre vai ocupar toda largura do layout*/
+  width: 100%;
+}
+
+.nav-main {
+  width: 100%;
+  max-width: 960px;
+  /*esquema para a div centralizar em relação a div pai, ao invés de fica no canto, nesse caso o header, só funciona se tiver 
+  especificado uma largura, como acima de 960px, 100% ajuda ocupa tudo com o limite da largura maxima, ai centraliza*/
+  margin: 0 auto;
+  border: 1px solid yellow;
+}
+
+.nav-main a {
+  color: var(--white-color);
+}
