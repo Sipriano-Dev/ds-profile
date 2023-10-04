@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap");
 
 :root {
-  --bg-cyan-blue-color: #2c3e50;
+  --cyan-blue-color: #2c3e50;
   --white-color: #fff;
+  --bright-cyan-color: #1abc9c;
 }
 
 * {
@@ -17,15 +18,15 @@ body {
   font-family: Montserrat, sans-serif;
 }
 
-.nav-container {
-  background-color: var(--bg-cyan-blue-color);
+header {
+  background-color: var(--cyan-blue-color);
   height: 100px;
   /*sempre vai ocupar toda largura do layout*/
   width: 100%;
   padding: 20px;
 }
 
-.nav-main {
+nav {
   width: 100%;
   max-width: 960px;
   /*esquema para a div centralizar em relação a div pai, ao invés de fica no canto, nesse caso o header, só funciona se tiver 
@@ -38,20 +39,20 @@ body {
   align-items: center;
 }
 
-.nav-main a {
+nav a {
   color: var(--white-color);
   text-decoration: none;
   text-transform: uppercase;
 }
 
-.menu-itens {
+nav ul {
   list-style-type: none;
   display: flex;
   padding: 0;
   margin: 0;
 }
 
-.menu-itens li {
+nav ul li {
   margin: 10px;
   font-size: 14px;
 }
@@ -60,4 +61,23 @@ body {
   font-weight: bold;
   font-size: 18px;
   margin-bottom: 5px;
+}
+
+#profile {
+  background-color: var(--bright-cyan-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--white-color);
+  padding: 65px 0;
+}
+
+#profile img {
+  width: 150px;
+  padding-bottom: 40px;
+}
+
+#profile h1,
+#profile p {
+  margin: 0;
 }
